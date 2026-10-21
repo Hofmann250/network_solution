@@ -1,0 +1,49 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.content {
+    display: block;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.part {
+    width: 100%;
+    height: 25%;
+    background: rgb(175, 172, 172);
+    border: 1px solid rgb(51, 214, 239);
+}
+
+.nav {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.nav-img {
+    float: left;
+    background: rgb(175, 172, 172);
+    border: 2px solid rgb(51, 214, 239);
+    text-align: center;
+    width: 50%;
+    height: 200px;
+}
+
+.left {
+    width: 70%;
+    height: 600px;
+    float: left;
+}
+
+.right {
+    height: 600px;
+    float: right;
+    width: 30%;
+    background: rgb(175, 172, 172);
+    border: 2px solid rgb(51, 214, 239);
+}
