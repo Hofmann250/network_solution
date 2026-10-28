@@ -39,58 +39,88 @@
 
         .sandbox {
             background: #121214;
-            padding: 25px;
+            padding: 25px 25px 40px;
             border-radius: 6px;
             border: 2px dashed #323238;
         }
 
-        h3 {
-            font-size: 20px;
-            background-color: blue;
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(57, 57, 253, 0.63);
             display: inline;
             margin-bottom: 20px;
         }
 
         .button {
+            font-weight: bold;
             background: #ff9800;
             color: #121214;
             display: inline;
             padding: 7px 15px;
-            border-radius: 6px;
+            border-radius: 4px;
             float: right;
         }
 
         .price {
+            font-size: 14px;
+            text-decoration: line-through;
             display: inline-block;
+            vertical-align: center;
+            color: grey;
         }
 
         .price.active {
-            background: green;
+            font-size: medium;
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+            background: rgb(6, 185, 6);
             clear: right;
-            padding: 5px 10px;
+            padding: 2px 13px;
             border-radius: 6px;
+            font-weight: bold;
         }
 
-        .part {
-            display: block;
+        .price-line {
+            overflow: hidden;
+            margin-bottom: 20px;
         }
 
         .block {
+            overflow: hidden;
+            border-radius: 6px;
             display: block;
             background: #29292e;
-            padding: 20px;
-            height: 100px;
+            padding: 20px 30px;
+
         }
 
         .parameter {
+            font-size: 14px;
+            border-radius: 3px;
+            padding: 2px 10px;
             display: inline;
             float: left;
             background: #323238;
         }
 
-        .text {
-            float: left;
-            clear: left;
+        .parameter+.parameter {
+            margin-left: 20px;
+        }
+
+        .red {
+            font-weight: bold;
+            color: red;
+        }
+
+        .badge {
+            overflow: hidden;
+            margin: 10px 0 20px 0;
+        }
+        .text{
+            font-size: 14px;
         }
     </style>
 </head>
@@ -127,19 +157,20 @@
         <div class="sandbox">
             <!-- НАЧАЛО ЗОНЫ РЕДАКТИРОВАНИЯ. ИСПОЛЬЗУЙ ТОЛЬКО DIV, SPAN И КОМБИНАЦИИ КЛАССОВ -->
             <div class="block">
-                <div class="part">
-                    <h3>Курс «Архитектура CSS»</h3>
+                <div>
+                    <span class="title">Курс «Архитектура CSS»</span>
                     <div class="button">Купить</div>
                 </div>
-                <div class="part">
+                <div class="badge">
                     <div class="parameter"> В наличии</div>
                     <div class="parameter"> 🔥 Хит</div>
                 </div>
-                <div class="part">
+                <div class="price-line">
                     <div class="price">9 900 ₽</div>
                     <div class="price active"> 5 400 ₽</div>
                 </div>
-                <div class="text"> Внимание! Товар КОНЧАЕТСЯ! Доступно всего 3 места со скидкой.</div>
+                <span class="text"> Внимание! Товар <span class="red">КОНЧАЕТСЯ!</span> Доступно всего 3 места со
+                    скидкой.</span>
             </div>
 
             <!-- КОНЕЦ ЗОНЫ РЕДАКТИРОВАНИЯ -->
